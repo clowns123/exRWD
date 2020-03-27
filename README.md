@@ -43,3 +43,5 @@
 17. [미디어 쿼리 중단점](https://www.browserstack.com/guide/responsive-design-breakpoints), [부트스트랩 기준](https://getbootstrap.com/docs/4.1/layout/overview/)
 18. 이미지 배율조정
     1. <img srcset 등이 있다.
+19. [반응형 웹디자인 테스트](http://troy.labs.daum.net/)
+20. 
