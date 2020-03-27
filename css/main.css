@@ -1,0 +1,15 @@
+/* 모바일 & 데스크탑 공통 */
+body {
+  background-color: skyblue;
+}
+@media screen and (max-width: 999px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: green;
+  }
+}
