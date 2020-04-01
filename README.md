@@ -12,6 +12,7 @@
 5. 반응형 웹 디자인 사례
    1.  [koreawebdesign.com](http://koreawebdesign.com/tag/responsive/)
    2. [https://mediaqueri.es/](https://mediaqueri.es/)
+   3.  http://responsivelogos.co.uk/
 6. 반응형 웹 구현 방법
    1. 사용자 모바일 경험 고려
    2. 완성된 비주얼보다 프로토타입 테스트 우선
@@ -44,4 +45,50 @@
 18. 이미지 배율조정
     1. <img srcset 등이 있다.
 19. [반응형 웹디자인 테스트](http://troy.labs.daum.net/)
-20. 
+
+
+
+# 1일차
+
+1. 실 디바이스 테스트가 중요하다
+
+   * 너무 하나하나 드레그를 확인하지 말자
+
+2. http://responsivelogos.co.uk/
+
+   * 반응형으로 잘 만들었지만 웹 접근성에서 떨어진다.
+
+3. img에서 srcset을 사용하여 해상도에 따라 image크기를 바꿔준다.
+
+   1. css에서도 가능하다 하지만 html에서 사용해야 성능면에서 좋다.
+
+   2. ```html
+      <a href="./index.html"><img src="./images/image-1x.png" alt="웹카페"
+      srcset="./images/image-2x.png 2x,
+      ./images/image-3x.png 3x"/></a>
+      ```
+
+   3. ```css
+      /* 1.25 dpr */
+      @media 
+      (-webkit-min-device-pixel-ratio: 1.25), 
+      (min-resolution: 120dpi){ 
+          /* Retina-specific stuff here */
+      }
+      
+      /* 1.3 dpr */
+      @media 
+      (-webkit-min-device-pixel-ratio: 1.3), 
+      (min-resolution: 124.8dpi){ 
+          /* Retina-specific stuff here */
+      }
+      
+      /* 1.5 dpr */
+      @media 
+      (-webkit-min-device-pixel-ratio: 1.5), 
+      (min-resolution: 144dpi){ 
+          /* Retina-specific stuff here */
+      }
+      ```
+
+4. inherit : 부모요소 상속
