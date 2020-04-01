@@ -46,8 +46,18 @@
           </fieldset>
         </form>
       </header>
-      <nav class="appNavigation">
-          
+      <nav class="appNavigation" aria-labelledby="menuTitle">
+        <h2 class="a11yHidden" id="menuTitle">메인 메뉴</h2>
+        <button
+          type="button"
+          class="buttonNone buttonBurger isAct"
+          aria-label="메뉴 열기"
+          title="메뉴 열기"
+        >
+          <span class="burgerBar round positionTop"></span>
+          <span class="burgerBar round positionMiddle"></span>
+          <span class="burgerBar round positionBottom"></span>
+        </button>
       </nav>
       <main class="appMain">
         <section class="book">추천서적</section>
