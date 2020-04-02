@@ -219,9 +219,9 @@ body {
     width: 30px;
     height: 30px;
     overflow: hidden;
-    background-color: blue;
   }
   .burgerBar {
+    cursor: pointer;
     position: absolute;
     left: 0;
     width: 100%;
@@ -256,7 +256,7 @@ body {
   }
   /* 모바일 메인메뉴 */
   .menu__list {
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
     width: 70%;
     height: 100vh;
@@ -268,34 +268,33 @@ body {
     transform: translateX(-105%);
   }
 
-  .isAct .menu__list{
+  .isAct .menu__list {
     transform: none;
   }
   .menu__link {
     font-size: 1.8rem;
     font-weight: 700;
-    padding: .5em;
+    padding: 0.5em;
     display: inline-block;
   }
-  .menu__item{
-    margin-bottom: .5em;
-  }
-
-  .menu__subMenu{
-    display: none;
-  }
-  .menuAct .menu__subMenu{
-    display: block;
-  }
-  .menu__subMenu li{
+  .menu__item {
     margin-bottom: 0.5em;
   }
-  .menu__subMenu a{
+
+  .menu__subMenu {
+    display: none;
+  }
+  .menuAct .menu__subMenu {
+    display: block;
+  }
+  .menu__subMenu li {
+    margin-bottom: 0.5em;
+  }
+  .menu__subMenu a {
     display: inline-block;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
   }
 
-  
   .menu__link .appMain {
     height: 70vh;
   }
