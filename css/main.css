@@ -2,13 +2,13 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
 /* Fontello 웹폰트 */
 @font-face {
-  font-family: "fontello";
-  src: url("./font/fontello.eot?98005817");
-  src: url("./font/fontello.eot?98005817#iefix") format("embedded-opentype"),
-    url("./font/fontello.woff2?98005817") format("woff2"),
-    url("./font/fontello.woff?98005817") format("woff"),
-    url("./font/fontello.ttf?98005817") format("truetype"),
-    url("./font/fontello.svg?98005817#fontello") format("svg");
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?98005817');
+  src: url('./font/fontello.eot?98005817#iefix') format('embedded-opentype'),
+    url('./font/fontello.woff2?98005817') format('woff2'),
+    url('./font/fontello.woff?98005817') format('woff'),
+    url('./font/fontello.ttf?98005817') format('truetype'),
+    url('./font/fontello.svg?98005817#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,50 +21,50 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: 0.2em;
+  margin-right: .2em;
   text-align: center;
   font-variant: normal;
   text-transform: none;
   line-height: 1em;
-  margin-left: 0.2em;
+  margin-left: .2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-export:before {
-  content: "\e800";
+  content: '\e800';
 }
 .icon-search:before {
-  content: "\e80b";
+  content: '\e80b';
 }
 .icon-star:before {
-  content: "\e814";
+  content: '\e814';
 }
 .icon-plus:before {
-  content: "\e815";
+  content: '\e815';
 }
 .icon-minus:before {
-  content: "\e816";
+  content: '\e816';
 }
 .icon-calendar:before {
-  content: "\e817";
+  content: '\e817';
 }
 .icon-link-ext:before {
-  content: "\f08e";
+  content: '\f08e';
 }
 .icon-quote-left:before {
-  content: "\f10d";
+  content: '\f10d';
 }
 .icon-quote-right:before {
-  content: "\f10e";
+  content: '\f10e';
 }
 .icon-circle:before {
-  content: "\f111";
+  content: '\f111';
 }
 .icon-dot-circled:before {
-  content: "\f192";
+  content: '\f192';
 }
 .icon-git-squared:before {
-  content: "\f1d2";
+  content: '\f1d2';
 }
 /* 스타일 초기화 */
 .resetMargin {
@@ -107,13 +107,12 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: "Spoqa Han Sans", sans-serif;
+  font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.6rem;
   /* font-family: 'Times New Roman', Times, serif; */
 }
 /* 모바일 & 데스크탑 공통 */
-.appMain {
-}
+
 .appFooter {
   background-color: purple;
 }
@@ -123,7 +122,6 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
-
 /* 공통 헤더 */
 .appHeader {
   padding-bottom: 20px;
@@ -159,77 +157,67 @@ body {
 .buttonSearch {
   color: #fff;
 }
-
 /* 공통 메인 콘텐츠 */
 .appMain {
   display: flex;
   flex-flow: row wrap;
 }
 /* 공통 섹션 제목 */
+.appMain [class*="__title"] {
+  font-size: 1.8rem;
+  padding-top: 0.5em;
+}
+.appMain [class*="__enTitle"] {
+  display: block;
+}
 .sprite {
   background-image: url(./images/sprite_main.png);
   background-repeat: no-repeat;
-  padding-left: 65px;
   height: 60px;
+  padding-left: 65px;
 }
 .spriteBook {
   background-position: 0 0;
 }
-.spriteNews{
+.spriteNews {
   background-position: 0 -230px;
-
 }
-.spriteBoard{
+.spriteBoard {
   background-position: 0 -115px;
 }
-.spritefavorite{
+.spriteFavorite {
   background-position: 0 -345px;
 }
-.spriteTwitter{
+.spriteTwitter {
   background-position: 0 -460px;
 }
+
 .themeGreen {
   color: #abd375;
 }
-.themeYellow{
+.themeYellow {
   color: #e8ca58;
 }
-.themeBrown{
+.themeBrown {
   color: #c7b39a;
 }
-.themeSkyblue{
+.themeSkyblue {
   color: #6aaee6;
 }
-.themeOrange{
-  color: #eeab0a;
+.themeOrange {
+  color: #eea60a;
 }
-
 .responsive {
   max-width: 100%;
   height: auto;
 }
-/* 공통 추천서적 */
-/*
-.book__title {
-  font-size: 1.8rem;
-  padding-top: 0.5em;
-} 
-.book__enTitle {
-  display: block;
+.appMain [class*="__summary"] {
+  line-height: 1.5;
 }
-*/
-
-.appMain [class*="__title"]{
-  font-size: 1.8rem;
-  padding-top: 0.5em;
-}
-.appMain [class*="__enTitle"]{
-  display: block;
-}
-
+/* 공통 추천 서적 */
 .book__cover {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 .book__cover,
 .book__info {
@@ -243,10 +231,63 @@ body {
   display: inline-block;
 }
 .book__info dd[aria-label] {
-  display: block; 
+  display: block;
+  font-size: 3rem;
 }
-.book__summary{
-  line-height: 1.6em;
+
+/* 공통 새소식 */
+.news__videoContainer {
+  margin-left: 0;
+  margin-right: 0;
+}
+.iframeContainer {
+  position: relative;
+  height: 0;
+}
+.iframe4To3 {
+  padding-top: 75%;
+}
+.iframe16To9 {
+  padding-top: 56.25%;
+}
+.iframe21To9 {
+  padding-top: 42.857142857142855%;
+}
+.iframeVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.news__date {
+  display: block;
+  text-align: right;
+}
+/* 공통 게시판 */
+.board {
+  position: relative;
+}
+.board__list li {
+  display: flex;
+  margin: 0.5em 0;
+  align-items: center;
+}
+.board__list a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  padding: 0.5em 0;
+}
+.board__list time {
+  margin-left: .5em;
+}
+.board__more {
+  position: absolute;
+  top: 1em;
+  right: -0.5em;
+  padding: 0.5em;
 }
 @media screen and (max-width: 999px) {
   /* 모바일 디바이스 */
@@ -339,7 +380,6 @@ body {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
   }
-  /* 모바일 메인메뉴 */
   .menu__list {
     background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
@@ -352,9 +392,11 @@ body {
     padding: 1em;
     transform: translateX(-105%);
   }
-
   .isAct .menu__list {
     transform: none;
+  }
+  .menu__item {
+    margin-bottom: 0.5em;
   }
   .menu__link {
     font-size: 1.8rem;
@@ -362,10 +404,6 @@ body {
     padding: 0.5em;
     display: inline-block;
   }
-  .menu__item {
-    margin-bottom: 0.5em;
-  }
-
   .menu__subMenu {
     display: none;
   }
@@ -379,30 +417,12 @@ body {
     display: inline-block;
     padding: 0.5em 1em;
   }
-
   .book,
   .news,
   .board,
   .twitter,
   .favorite {
     width: 100%;
-  }
-
-  .book {
-  }
-  .book__title {
-  }
-  .book__enTitle {
-  }
-
-  .book__cover {
-    margin: 0 auto;
-  }
-  .book__info {
-  }
-
-  .appFooter {
-    height: 15vh;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -476,12 +496,6 @@ body {
     padding: 0.25em 0.5em;
     margin: 0.5em;
   }
-
-  .book {
-  }
-  .book h2::before {
-  }
-
   .appMain {
     justify-content: space-between;
   }
@@ -499,8 +513,5 @@ body {
   }
   .favorite {
     width: 240px;
-  }
-  .appFooter {
-    height: 10vh;
   }
 }
