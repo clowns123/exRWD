@@ -125,7 +125,9 @@
             <dd>김데레사</dd>
             <dt class="a11yHidden">도서 평점</dt>
             <dd class="themeGreen" aria-label="5점 만점에 4점">
-              <span aria-hidden="true">★★★★☆</span>
+              <span aria-hidden="true">
+                ★★★★☆
+              </span>
             </dd>
           </dl>
           <p class="book__summary">
@@ -136,34 +138,25 @@
         </section>
         <section class="news">
           <h2 class="news__title sprite spriteNews">
-            새소식
-            <span class="news__enTitle themeYellow">
-              WebCafe News
-            </span>
+            새소식<span class="news__enTitle themeYellow">WebCafe News</span>
           </h2>
           <figure class="news__videoContainer">
-            <!-- <video
-              class="news__video responsive"
-              poster="./media/poster.jpg"
-              controls
-            >
-              <source src="./media/stories.mp4" type="video/mp4" />
-              <track
-                src="./media/stories-en.vtt"
-                kind="captions"
-                srclang="en"
-                label="English Caption"
-              />
-            </video> -->
-            <div class="ifameContainer iframe16To9">
+            <!-- <video class="news__video responsive" poster="./media/poster.jpg" controls>
+            <source src="./media/stories.mp4" type="video/mp4" />
+            <track
+                   src="./media/stories-en.vtt"
+                   kind="captions"
+                   srclang="en"
+                   label="English Caption" />
+          </video> -->
+            <div class="iframeContainer iframe16To9">
               <iframe
                 class="iframeVideo"
-                src="https://www.youtube.com/embed/UJRXzXscxCs"
+                src="https://www.youtube.com/embed/iOw2oY4NZYI"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
             </div>
-
             <figcaption class="a11yHidden">구글 개발자 이야기</figcaption>
           </figure>
           <p class="news__summary">
@@ -175,17 +168,13 @@
             주목 받으며 글로벌 진출의 본보기가 되고 있는 개발사 세 곳과 함께
             했습니다.
           </p>
-          <time class="news__date " datetime="2020-04-03T14:03:23">
-            <span class="icon-calendar"></span>
-            2020.04.03
+          <time class="news__date" datetime="2020-04-03T14:03:23">
+            <span class="icon-calendar"></span>2020.04.03
           </time>
         </section>
         <section class="board">
           <h2 class="board__title sprite spriteBoard">
-            게시판
-            <span class="board__enTitle themeBrown">
-              WebCafe Board
-            </span>
+            게시판<span class="board__enTitle themeBrown">WebCafe Board</span>
           </h2>
           <ul class="board__list resetList">
             <li class="icon-star">
@@ -211,28 +200,81 @@
               <time datetime="2019-11-27T11:44:30">2019.11.27</time>
             </li>
           </ul>
-          <a href="/" title="게시판" class="board__more"
-            ><span class="icon-plus themeBrown"></span>더보기</a
+          <a href="/" title="게시판" class="board__more">
+            <span class="icon-plus themeBrown"></span>더보기</a
           >
         </section>
-        <section class="twitter">
-          <h2 class="twitter__title sprite spriteTwitter">
-            트위터
-            <span class="twitter__enTitle themeSkyblue">
-              WebCafe Twitter
-            </span>
-          </h2>
-        </section>
         <section class="favorite">
-          <h2 class="favorite__title sprite spritefavorite">
-            인기사이트
-            <span class="favorite__enTitle themeOrange">
-              Favorite Site
-            </span>
+          <h2 class="favorite__title sprite spriteFavorite">
+            인기 사이트<span class="favorite__enTitle themeOrange"
+              >WebCafe Favorite</span
+            >
           </h2>
+          <ol class="favorite__list">
+            <li>
+              <a href="http://ko.learnlayout.com/" target="_blank" data-tooltip="레이아웃을 배웁시다">
+                Learn CSS Layout
+                <span class="icon-link-ext" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://flexboxfroggy.com/#ko" target="_blank" data-tooltip="플렉스 박스 게임">
+                Flexbox Froggy
+                <span class="icon-link-ext" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://cssgridgarden.com/#ko" target="_blank" data-tooltip="그리드 박스 게임">
+                CSS Grid Garden
+                <span class="icon-link-ext" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/ko/" target="_blank" data-tooltip="MDN 레퍼런스">
+                MDN Web Docs
+                <span class="icon-link-ext" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ol>
         </section>
+        <article class="twitter">
+          <h2 class="twitter__title sprite spriteTwitter">
+            트위터<span class="twitter__enTitle themeSkyblue"
+              ></span
+            >
+          </h2>
+          <div class="twitter__container">
+            <dl class="twitter__userInfo">
+              <dt class="a11yHidden">사용자 이름</dt>
+              <dd class="twitter__userName">김데레사</dd>
+              <dt class="a11yHidden">사용자 ID</dt>
+              <dd class="twitter__userId themeSkyblue">
+                <a href="/" target="_blank" title="트위터 계정으로 이동">@seulbinim</a>
+              </dd>
+            </dl>
+            <figure class="twitter__userProfile">
+              <span class="circlePhoto"><img src="./images/seulbinim.jpg" alt="" class="responsive "></span>
+            </figure>
+            <p class="twitter__summary">
+              웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다.
+              참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.
+            </p>
+            <time class="twitter__date" datetime="2019-11-27T15:03:25">
+              <span class="icon-calendar themeSkyblue"></span>2019.11.27
+            </time>
+        </article>
       </main>
-      <footer class="appFooter">푸터</footer>
+      <footer class="appFooter">
+        <address class="address">
+          <span>서울시 마포구 상수동 123-12 한주빌딩 5층</span>
+          <span>전화: <a class="address__telephone" href="tel:022345678">02-234-5678</a></span>
+          <span>이메일:
+            <a class="address__link" href="mailto:seulbinim@gmail.com?subject=문의사항">seulbinim@gmail.com</a></span>
+        </address>
+        <small class="copyright">
+          Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.
+        </small>
+      </footer>
     </div>
   </body>
 </html>
