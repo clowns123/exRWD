@@ -113,7 +113,6 @@ body {
 }
 /* 모바일 & 데스크탑 공통 */
 .appMain {
-  background-color: lime;
 }
 .appFooter {
   background-color: purple;
@@ -124,10 +123,7 @@ body {
   display: flex;
   flex-flow: row wrap;
 }
-.appMain {
-  display: flex;
-  flex-flow: row wrap;
-}
+
 /* 공통 헤더 */
 .appHeader {
   padding-bottom: 20px;
@@ -162,6 +158,95 @@ body {
 }
 .buttonSearch {
   color: #fff;
+}
+
+/* 공통 메인 콘텐츠 */
+.appMain {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* 공통 섹션 제목 */
+.sprite {
+  background-image: url(./images/sprite_main.png);
+  background-repeat: no-repeat;
+  padding-left: 65px;
+  height: 60px;
+}
+.spriteBook {
+  background-position: 0 0;
+}
+.spriteNews{
+  background-position: 0 -230px;
+
+}
+.spriteBoard{
+  background-position: 0 -115px;
+}
+.spritefavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
+.themeGreen {
+  color: #abd375;
+}
+.themeYellow{
+  color: #e8ca58;
+}
+.themeBrown{
+  color: #c7b39a;
+}
+.themeSkyblue{
+  color: #6aaee6;
+}
+.themeOrange{
+  color: #eeab0a;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+/* 공통 추천서적 */
+/*
+.book__title {
+  font-size: 1.8rem;
+  padding-top: 0.5em;
+} 
+.book__enTitle {
+  display: block;
+}
+*/
+
+.appMain [class*="__title"]{
+  font-size: 1.8rem;
+  padding-top: 0.5em;
+}
+.appMain [class*="__enTitle"]{
+  display: block;
+}
+
+.book__cover {
+  margin-left: 0;
+  margin-right: 0;
+}
+.book__cover,
+.book__info {
+  text-align: center;
+}
+.book__info dd {
+  margin-left: 0;
+}
+.book__info dt,
+.book__info dd {
+  display: inline-block;
+}
+.book__info dd[aria-label] {
+  display: block; 
+}
+.book__summary{
+  line-height: 1.6em;
 }
 @media screen and (max-width: 999px) {
   /* 모바일 디바이스 */
@@ -295,17 +380,27 @@ body {
     padding: 0.5em 1em;
   }
 
-  .menu__link .appMain {
-    height: 70vh;
-  }
   .book,
   .news,
   .board,
   .twitter,
   .favorite {
     width: 100%;
-    height: 20%;
   }
+
+  .book {
+  }
+  .book__title {
+  }
+  .book__enTitle {
+  }
+
+  .book__cover {
+    margin: 0 auto;
+  }
+  .book__info {
+  }
+
   .appFooter {
     height: 15vh;
   }
@@ -381,8 +476,13 @@ body {
     padding: 0.25em 0.5em;
     margin: 0.5em;
   }
+
+  .book {
+  }
+  .book h2::before {
+  }
+
   .appMain {
-    height: 60vh;
     justify-content: space-between;
   }
   .book {
